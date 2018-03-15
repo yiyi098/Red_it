@@ -41,6 +41,8 @@ mongoose.connect("mongodb://localhost/red_it", {
   useMongoClient: true
 });
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines"
+
 // Routes
 
 app.get("/", function(req, res) {
