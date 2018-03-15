@@ -43,15 +43,15 @@ mongoose.connect(MONGODB_URI);
 
 // Routes
 
-app.get("/", function(req, res) {
-  db.Article.find({})
-    .then(function(data) {
-      res.render("index", { articles: data });
-    })
-    .catch(function(err) {
-      console.log(err);
-    });
-});
+// app.get("/", function(req, res) {
+//   db.Article.find({})
+//     .then(function(data) {
+//       res.render("index", { articles: data });
+//     })
+//     .catch(function(err) {
+//       console.log(err);
+//     });
+// });
 
 // A GET route for scraping the echojs website
 app.get("/scrape", function(req, res) {
