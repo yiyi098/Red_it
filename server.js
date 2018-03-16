@@ -43,7 +43,7 @@ mongoose.connect(MONGODB_URI);
 // Routes
 
 app.get("/", function(req, res) {
-  db.Article.find({})
+  db.Article.find({}).sort({ _id: -1 })
     .then(function(data) {
       res.render("index", { articles: data });
     })
