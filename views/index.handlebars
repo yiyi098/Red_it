@@ -28,8 +28,8 @@
         {{#each articles}}
         <div class='card'>
           <div class='card-body'>
-            <p data-id='" + data[i]._id + "'>" + {{this.title}} + "
-              <br/> " + {{this.link}} + " </p>
+            <p data-id= {{this._id}}> {{this.title}}
+              <br/> {{this.link}} </p>
           </div>
         </div>
         {{/each}}
