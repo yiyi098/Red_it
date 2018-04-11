@@ -2,6 +2,8 @@
 
 [Heroku Link to Red_it](https://evening-oasis-21607.herokuapp.com/)
 
+![red_it page](./red_itpage.png)
+
 
 ### Overview
 
